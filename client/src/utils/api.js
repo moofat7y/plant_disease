@@ -1,5 +1,5 @@
 import axios from "axios";
-const baseUrl = "https://plant-diseases-h2mk.onrender.com/api/";
+const baseUrl = "https://plant-diseases-2rdp.onrender.com/api/";
 
 const api = axios.create({ baseURL: baseUrl, withCredentials: true });
 api.interceptors.request.use(
