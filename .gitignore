@@ -1,0 +1,11 @@
+node_modules
+.env
+
+traning.zip
+.ipynb_checkpoints
+PlantVillage
+saved_models
+modellastModel.h5
+newTraning
+5
+traning
