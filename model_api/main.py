@@ -7,7 +7,7 @@ import tensorflow as tf
 from utils.utilFun import read_file_as_image
 app = FastAPI()
 
-MODEL = models.load_model(r'D:\Projects\Full Stack\Plant_Disease\model_api\detectionModel.h5')
+MODEL = models.load_model('detectionModel.h5')
 CLASS_NAME = ['Apple___Apple_scab',
  'Apple___healthy',
  'Corn_(maize)___Northern_Leaf_Blight',
