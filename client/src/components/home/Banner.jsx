@@ -144,21 +144,18 @@ const Banner = () => {
         <SwiperSlide>
           <img
             src="https://themes.g5plus.net/spring/wp-content/uploads/revslider/Slider02/slider-06.jpg"
-            loading="lazy"
             alt="plant-banner"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             src="https://cdn.shopify.com/s/files/1/0681/1208/9404/files/main-banner-1_1903x922.jpg?v=1668763214"
-            loading="lazy"
             alt="plant-banner"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             src="https://themes.g5plus.net/spring/wp-content/uploads/revslider/Slider02/slider-05.jpg"
-            loading="lazy"
             alt="plant-banner"
           />
         </SwiperSlide>
