@@ -35,7 +35,7 @@ const Header = () => {
       className="navbar fixed-top navbar-dark navbar-expand-md py-md-0"
     >
       <div className="container d-flex">
-        <Link to="/a" className="navbar-brand text-primary  mx-0 ">
+        <Link to="/" className="navbar-brand text-primary  mx-0 ">
           Logo
         </Link>
 

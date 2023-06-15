@@ -44,6 +44,11 @@ export const banner_text = [
     header: "PLANT DIESASE DETECTION",
     icon: false,
   },
-  { text: "The Spring Plant Agency", header: "HOUSEPLANT", icon: true },
-  { text: "detect plant disease using", header: "CNN MODEL", icon: false },
+  { text: "The Spring Plant Agency", header: "CNN MODEL", icon: true },
+  {
+    text: "detect plant disease using",
+    header: "CNN MODEL",
+    icon: false,
+    detection: true,
+  },
 ];

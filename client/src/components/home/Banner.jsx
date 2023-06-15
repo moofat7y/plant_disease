@@ -14,9 +14,11 @@ import "swiper/css/pagination";
 // import required modules
 import { EffectCube, Pagination } from "swiper";
 import { banner_text } from "../../utils/helpers";
+import { useNavigate } from "react-router-dom";
 
 const Banner = () => {
   const [activeText, setActiveText] = useState(0);
+  const navigate = useNavigate();
   SwiperCore.use([Autoplay]);
   const onChange = (e) => {
     setActiveText(e.activeIndex);
@@ -83,7 +85,8 @@ const Banner = () => {
           </motion.p>
         ) : null}
 
-        {banner_text[activeText].icon ? null : (
+        {banner_text[activeText].icon ||
+        banner_text[activeText].detection ? null : (
           <motion.a
             href="#service"
             style={{
@@ -101,6 +104,25 @@ const Banner = () => {
             Explore
           </motion.a>
         )}
+
+        {banner_text[activeText].detection ? (
+          <motion.button
+            onClick={() => navigate("/disease-detection")}
+            style={{
+              zIndex: 4,
+              fontFamily: "Playfair Display",
+              letterSpacing: "1px",
+            }}
+            key={"buttonfordetection"}
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+            transition={{ type: "tween", duration: "1.5" }}
+            className="btn btn-primary mt-2 px-5 py-2 text-light fs-6 fw-semibold"
+          >
+            Detect
+          </motion.button>
+        ) : null}
       </div>
 
       <Swiper
@@ -123,18 +145,21 @@ const Banner = () => {
           <img
             src="https://themes.g5plus.net/spring/wp-content/uploads/revslider/Slider02/slider-06.jpg"
             loading="lazy"
+            alt="plant-banner"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             src="https://cdn.shopify.com/s/files/1/0681/1208/9404/files/main-banner-1_1903x922.jpg?v=1668763214"
             loading="lazy"
+            alt="plant-banner"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             src="https://themes.g5plus.net/spring/wp-content/uploads/revslider/Slider02/slider-05.jpg"
             loading="lazy"
+            alt="plant-banner"
           />
         </SwiperSlide>
       </Swiper>

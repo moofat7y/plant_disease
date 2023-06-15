@@ -16,6 +16,7 @@ const Footer = () => {
   const dispatch = useDispatch();
   const onLogout = () => {
     dispatch(logout());
+    facebook;
   };
 
   return (
@@ -165,19 +166,19 @@ const Footer = () => {
             Powered By MET Team © 2023
           </p>
           <div className="links mt-4 d-flex gap-4 justify-content-center align-items-center">
-            <a href="" className="nav-link">
+            <a href="facebook" aria-label="Facebook" className="nav-link">
               <FaFacebookF className="text-muted fs-5" />
             </a>
 
-            <a href="" className="nav-link">
+            <a href="twitter" aria-label="Twitter" className="nav-link">
               <FaTwitter className="text-muted fs-5" />
             </a>
 
-            <a href="" className="nav-link">
+            <a href="instagram" aria-label="Instagram" className="nav-link">
               <FaInstagram className="text-muted fs-5" />
             </a>
 
-            <a href="" className="nav-link">
+            <a href="linkedin" aria-label="Linkedin" className="nav-link">
               <FaLinkedinIn className="text-muted fs-5" />
             </a>
           </div>

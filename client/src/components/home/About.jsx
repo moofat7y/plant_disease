@@ -29,7 +29,12 @@ const About = () => {
               leaf.
             </p>
 
-            <Link className="btn mt-4 fs-7 detect-link px-5">DETECT</Link>
+            <Link
+              to="/disease-detection"
+              className="btn mt-4 fs-7 detect-link px-5"
+            >
+              DETECT
+            </Link>
           </div>
 
           <div className="col-12 mb-4 mb-lg-0 order-1 order-lg-2 col-lg-6">
