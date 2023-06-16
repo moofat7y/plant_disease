@@ -17,9 +17,11 @@ const Services = () => {
           <div className="box col-12 col-md-6  col-lg-3 mb-3 mb-lg-0">
             <div className="content d-flex flex-column align-items-center">
               <BsTree className="mb-4 fs-1 text-primary" />
-              <h3 className="fs-5 fw-semibold mb-3">Gardent Care</h3>
+              <h3 className="fs-5 fw-semibold mb-3">
+                Treatment recommendations
+              </h3>
               <p className="text-info text-center">
-                Let’s find a plant combination to suit your border or pot
+                Recommendations on how to treat diesased plant
               </p>
             </div>
           </div>
@@ -27,9 +29,10 @@ const Services = () => {
           <div className="box col-12 col-md-6  col-lg-3 mb-3 mb-lg-0">
             <div className="content d-flex flex-column align-items-center">
               <RiPlantLine className="mb-4 fs-1 text-primary" />
-              <h3 className="fs-5 fw-semibold mb-3">Plant Renovation</h3>
+              <h3 className="fs-5 fw-semibold mb-3">Disease identification</h3>
               <p className="text-info text-center">
-                Add colour and interest to your spring garden with our plants
+                The website's AI-powered algorithms can identify the disease
+                affecting the plant
               </p>
             </div>
           </div>
@@ -37,9 +40,10 @@ const Services = () => {
           <div className="box col-12 col-md-6  col-lg-3 mb-3 mb-lg-0">
             <div className="content d-flex flex-column align-items-center">
               <RiSeedlingLine className="mb-4 fs-1 text-primary" />
-              <h3 className="fs-5 fw-semibold mb-3">Seed Supply</h3>
+              <h3 className="fs-5 fw-semibold mb-3">Plant Monitoring</h3>
               <p className="text-info text-center">
-                We do not have only plants but also many seed suit your style.
+                The website can offer a service where users can set up plant
+                monitoring systems
               </p>
             </div>
           </div>
@@ -47,9 +51,10 @@ const Services = () => {
           <div className="box col-12 col-md-6  col-lg-3 mb-3 mb-lg-0">
             <div className="content d-flex flex-column align-items-center">
               <IoWaterOutline className="mb-4 fs-1 text-primary" />
-              <h3 className="fs-5 fw-semibold mb-3">Watering Graden</h3>
+              <h3 className="fs-5 fw-semibold mb-3">User Community</h3>
               <p className="text-info text-center">
-                Join us for one of our open days and find plants for your garden
+                Provide a platform for users to connect and share their
+                experiences
               </p>
             </div>
           </div>
