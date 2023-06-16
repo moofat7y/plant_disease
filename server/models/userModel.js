@@ -25,12 +25,6 @@ var userSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
-    predImg: [
-      {
-        result: { type: Object, required: true },
-        images: { type: Object, required: true },
-      },
-    ],
     passwordChangedAt: Date,
     passwordResetToken: String,
     passowrdResetExpire: Date,
