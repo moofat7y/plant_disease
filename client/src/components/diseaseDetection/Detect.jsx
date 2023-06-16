@@ -38,7 +38,16 @@ const Detect = () => {
 
   const onSave = async () => {
     const formData = new FormData();
+    const type = isProccessed.class.split("_")[0];
+    const diagnose = isProccessed.class.split("__")[1].replace(/_/g, " ");
+    const confidance = isProccessed.confidence;
     formData.append("file", imgPreview[0]);
+    formData.append("type", type);
+    formData.append("diagnose", diagnose);
+    formData.append("confidance", confidance);
+
+    setIsProccessed({});
+    setImgPreview(null);
     dispatch(saveImage(formData));
   };
 
