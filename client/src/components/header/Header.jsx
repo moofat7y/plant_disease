@@ -51,7 +51,7 @@ const Header = () => {
               <IoPersonOutline className="fs-5 mx-1 text-white" />
             </div>
             <ul className="dropdown-menu text-center px-2 slideIn animate dropdown-menu-end ">
-              {/* <li>
+              <li>
                 <NavLink to="/my-account" className="dropdown-item" href="#">
                   Account
                 </NavLink>
@@ -60,7 +60,7 @@ const Header = () => {
                 <NavLink to="/setting" className="dropdown-item" href="#">
                   Settings
                 </NavLink>
-              </li> */}
+              </li>
               <li>
                 <button
                   disabled={isLoading}
