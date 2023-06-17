@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { IoPersonOutline } from "react-icons/io5";
 import { logout } from "../../features/auth/authSlice";
+import { SiOverleaf } from "react-icons/si";
 const Header = () => {
   const { token, isLoading } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
@@ -35,8 +36,8 @@ const Header = () => {
       className="navbar fixed-top navbar-dark navbar-expand-md py-md-0"
     >
       <div className="container d-flex">
-        <Link to="/" className="navbar-brand text-primary  mx-0 ">
-          Logo
+        <Link to="/" className="navbar-brand mx-0 ">
+          <SiOverleaf className="fs-1 text-primary" />
         </Link>
 
         {token ? (
@@ -97,7 +98,7 @@ const Header = () => {
         >
           <div className="offcanvas-header">
             <NavLink to="/" className="navbar-brand">
-              <h2 className="text-primary fs-3 py-0 lh-sm mb-0">LOGO</h2>
+              <SiOverleaf className="fs-1 text-primary" />
             </NavLink>
             <button
               type="button"

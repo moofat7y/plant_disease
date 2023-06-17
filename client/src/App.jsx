@@ -18,10 +18,11 @@ const DiseaseDetection = lazy(() =>
 import Loading from "./components/loading/Loading";
 import NavigationScroll from "./components/NavigationScroll";
 import NotFound from "./pages/NotFound";
+import LoadingPage from "./components/loading/LoadingPage";
 
 function App() {
   return (
-    <Suspense fallback={<Loading />}>
+    <Suspense fallback={<LoadingPage />}>
       <BrowserRouter>
         <NavigationScroll />
         <Loading />

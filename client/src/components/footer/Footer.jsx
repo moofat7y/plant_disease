@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import { logout } from "../../features/auth/authSlice";
+import { useSelector } from "react-redux";
 import { MdEmail, MdLocationPin } from "react-icons/md";
 import { IoIosCall } from "react-icons/io";
 import {
@@ -10,15 +9,10 @@ import {
   FaLinkedinIn,
   FaTwitter,
 } from "react-icons/fa";
+import { SiOverleaf } from "react-icons/si";
 
 const Footer = () => {
   const { token, isLoading } = useSelector((state) => state.auth);
-  const dispatch = useDispatch();
-  const onLogout = () => {
-    dispatch(logout());
-    facebook;
-  };
-
   return (
     <footer className="pt-5 pb-4 bg-dark">
       <div className="container">
@@ -31,7 +25,7 @@ const Footer = () => {
               to="#"
               className="nav-link fs-1 text-light mb-4 fw-bolder text-capitalize"
             >
-              logo
+              <SiOverleaf className="fs-1 text-primary" />
             </Link>
             <p className="fs-7 text-muted col-12 col-sm-10">
               We specializes in the detection of apple scab disease using deep

@@ -11,7 +11,7 @@ const Loading = () => {
       {statusLoading ? (
         <div
           style={{ zIndex: "10000" }}
-          className="w-100 vh-100 bg-light d-flex align-items-center justify-content-center"
+          className="w-100 vh-100 position-fixed bg-light d-flex align-items-center justify-content-center"
         >
           <Lottie
             style={{
@@ -19,7 +19,7 @@ const Loading = () => {
               height: "50%",
             }}
             animationData={loading}
-          />{" "}
+          />
         </div>
       ) : null}
     </>
