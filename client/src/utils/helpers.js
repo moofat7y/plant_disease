@@ -40,13 +40,13 @@ export const notifyWarning = (message) => {
 
 export const banner_text = [
   {
-    text: "The Spring Plant Agency",
+    text: "Early Plant Disease Detection",
     header: "PLANT DIESASE DETECTION",
     icon: false,
   },
-  { text: "The Spring Plant Agency", header: "CNN MODEL", icon: true },
+  { text: "Do You Have Any Diseased Plant", header: "START NOW", icon: true },
   {
-    text: "detect plant disease using",
+    text: "Detect Plant Disease Using",
     header: "CNN MODEL",
     icon: false,
     detection: true,
