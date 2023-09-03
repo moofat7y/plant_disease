@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { IoPersonOutline } from "react-icons/io5";
@@ -13,23 +13,27 @@ const Header = () => {
 
   const navRef = useRef();
   let currentScroll = 0;
-  window.addEventListener("scroll", (e) => {
-    if (e.currentTarget.scrollY > 150) {
-      if (e.currentTarget.scrollY < currentScroll) {
+  useEffect(() => {
+    window.addEventListener("scroll", (e) => {
+      if (e.currentTarget.scrollY > 150) {
+        if (e.currentTarget.scrollY < currentScroll) {
+          navRef?.current?.classList.add("show");
+          navRef?.current?.classList.remove("hide");
+        } else {
+          navRef?.current?.classList.remove("show");
+          navRef?.current?.classList.add("hide");
+        }
+        currentScroll = e.currentTarget.scrollY;
+      } else if (e.currentTarget.scrollY > 0) {
         navRef?.current?.classList.add("show");
-        navRef?.current?.classList.remove("hide");
       } else {
+        navRef?.current?.classList.remove("hide");
         navRef?.current?.classList.remove("show");
-        navRef?.current?.classList.add("hide");
       }
-      currentScroll = e.currentTarget.scrollY;
-    } else if (e.currentTarget.scrollY > 0) {
-      navRef?.current?.classList.add("show");
-    } else {
-      navRef?.current?.classList.remove("hide");
-      navRef?.current?.classList.remove("show");
-    }
-  });
+    });
+
+    // return () => window?.removeEventListener("scroll");
+  }, []);
   return (
     <nav
       ref={navRef}

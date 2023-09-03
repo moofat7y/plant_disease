@@ -25,7 +25,7 @@ const Detect = () => {
       formData.append("file", imgPreview[0]);
       setInProccessing(true);
       const response = await api.post(
-        "https://plant-model-4ltv.onrender.com/predict",
+        "http://localhost:8000/predict",
         formData
       );
       setIsProccessed(response.data);
