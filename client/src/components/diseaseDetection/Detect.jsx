@@ -25,7 +25,7 @@ const Detect = () => {
       formData.append("file", imgPreview[0]);
       setInProccessing(true);
       const response = await api.post(
-        "http://localhost:8000/predict",
+      "/predict",
         formData
       );
       setIsProccessed(response.data);
